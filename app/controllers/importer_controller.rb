@@ -15,10 +15,10 @@ class ImporterController < ApplicationController
 
   def match
     # params 
-    file = params[:file]
-    splitter = params[:splitter]
-    wrapper = params[:wrapper]
-    encoding = params[:encoding]
+    file     = params[:file]     || ''
+    splitter = params[:splitter] || ','
+    wrapper  = params[:wrapper]  || '"'
+    encoding = params[:encoding] || 'U'
     
     # save import file
     @original_filename = file.original_filename
