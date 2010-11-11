@@ -1,5 +1,7 @@
 require File.dirname(__FILE__) + '/../test_helper'
 
+# Author: Greg Mefford (@ferggo)
+# Some simple tests for the Redmine Importer plugin
 class ImporterTest < ActiveSupport::TestCase
   include ActionController::TestProcess
   
@@ -27,16 +29,16 @@ class ImporterTest < ActiveSupport::TestCase
       assert_equal "200 OK", @response.status
     end
 
-    should "error when missing project_id" do
+    should "not error when missing project_id" do
       post :match,
         :file => @fixture_file,
         :splitter => ",",
         :wrapper => "\"",
         :encoding => "U"
-      assert_equal "404 Not Found", @response.status
+      assert_equal "200 OK", @response.status
     end
 
-    should "error when missing file" do
+    should "not error when missing file" do
       post :match,
         :project_id => @project.id,
         :splitter => ",",

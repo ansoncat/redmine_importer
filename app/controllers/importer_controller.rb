@@ -53,8 +53,10 @@ class ImporterController < ApplicationController
       #@attrs.push([l_has_string?("field_#{attr}".to_sym) ? l("field_#{attr}".to_sym) : attr.to_s.humanize, attr])
       @attrs.push([l_or_humanize(attr, :prefix=>"field_"), attr])
     end
-    @project.all_issue_custom_fields.each do |cfield|
-      @attrs.push([cfield.name, cfield.name])
+    unless @project.nil?
+      @project.all_issue_custom_fields.each do |cfield|
+        @attrs.push([cfield.name, cfield.name])
+      end
     end
     @attrs.sort!
   end
