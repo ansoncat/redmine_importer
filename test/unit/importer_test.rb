@@ -36,11 +36,11 @@ class ImporterTest < ActiveSupport::TestCase
       assert_equal "200 OK", @response.status
     end
 
-    should "not error when missing file" do
+    should "redirect when missing file" do
       options = @post_options.dup
       options.delete(:file)
       post :match, options
-      assert_equal "200 OK", @response.status
+      assert_equal "302 Found", @response.status
     end
 
     should "not error when missing splitter" do

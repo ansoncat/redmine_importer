@@ -13,6 +13,12 @@ class ImporterController < ApplicationController
   end
 
   def match
+    unless !params[:file].nil?
+      flash[:error] = "You need to select a CSV file to upload."
+      redirect_to :action => 'index', :project_id => params[:project_id]
+      return
+    end
+
     # Delete existing iip to ensure there can't be two iips for a user
     ImportInProgress.delete_all(["user_id = ?",User.current.id])
     # save import-in-progress data
