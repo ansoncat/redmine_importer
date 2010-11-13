@@ -1,5 +1,4 @@
 require 'fastercsv'
-require 'tempfile'
 
 class ImporterController < ApplicationController
   unloadable
