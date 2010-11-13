@@ -245,6 +245,7 @@ class ImporterController < ApplicationController
 private
 
   def find_project
+    params[:project_id] = Project.first if params[:project_id].nil?
     @project = Project.find(params[:project_id])
   end
   
