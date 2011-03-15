@@ -1,0 +1,33 @@
+zh-TW:
+  label_import: "項目匯入"
+  label_issue_importer: "項目清單匯入工具"
+  label_upload_notice: "選擇即將匯入的CSV檔案。此檔案必須包含標頭列。"
+  label_upload_format: "檔案格式設定"
+  label_upload_encoding: "文字編碼:"
+  label_upload_splitter: "欄位分隔字元:"
+  label_upload_wrapper: "欄位包圍字元:"
+  
+  label_load_rules: "載入已保存的匹配規則"
+  label_toplines: "參考檔案 {{value}} 的頭幾行:"
+  label_match_columns: "欄位匹配"
+  label_match_select: "選擇匹配的欄位"
+  label_import_rule: "匯入規則"
+  label_default_tracker: "預設追蹤標籤 :"
+  label_update_issue: "更新已存在的項目"
+  label_journal_field: "選擇用於日誌的欄位:"
+  label_unique_field: "選擇用於識別項目的唯一欄位:"
+  label_update_other_project: "允許更新其他專案的項目"
+  label_ignore_non_exist: "忽略不存在的項目"
+  label_rule_name: "輸入規則名稱"
+ 
+  label_import_result: "匯入結果"
+  label_result_notice: "處理了{{handle_count}}個項目。{{success_count}}個項目被成功匯入。"
+  label_result_projects: "受影響的專案:"
+  label_result_issues: "{{count}}個項目"
+  label_result_failed: "{{count}}條失敗的項目:"
+  
+  option_ignore: "忽略"
+  
+  button_upload: "上傳檔案"
+  button_submit: "匯入"
+  button_save_rules_and_submit: "存儲匹配規則後匯入"
