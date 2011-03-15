@@ -8,7 +8,7 @@ zh:
   label_upload_wrapper: "字段包裹符:"
   
   label_load_rules: "载入已保存的匹配规则"
-  label_toplines: "参考文件 %s 的头几行:"
+  label_toplines: "参考文件 {{value}} 的头几行:"
   label_match_columns: "字段配对"
   label_match_select: "选择对应的字段"
   label_import_rule: "导入规则"
@@ -21,10 +21,10 @@ zh:
   label_rule_name: "输入规则名称"
  
   label_import_result: "导入结果"
-  label_result_notice: "处理了%d个问题。%d个问题被成功导入。"
+  label_result_notice: "处理了{{handle_count}}个问题。{{success_count}}个问题被成功导入。"
   label_result_projects: "受影响的项目:"
-  label_result_issues: "%d个问题"
-  label_result_failed: "%d条失败的行:"
+  label_result_issues: "{{count}}个问题"
+  label_result_failed: "{{count}}条失败的行:"
   
   option_ignore: "忽略"
   
