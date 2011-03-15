@@ -61,7 +61,7 @@ END_OF_STRING
 
 <hr/>
 
-<%= l(:label_toplines, @original_filename) %>
+<%= l(:label_toplines, { :original_filename => @original_filename } ) %>
 <table class="list">
     <thead><tr>
         <% @headers.each do |column| %>
@@ -79,3 +79,4 @@ END_OF_STRING
 	</tr>
 	</tbody>
 </table>
+

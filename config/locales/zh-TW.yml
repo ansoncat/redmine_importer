@@ -8,7 +8,7 @@ zh-TW:
   label_upload_wrapper: "欄位包圍字元:"
   
   label_load_rules: "載入已保存的匹配規則"
-  label_toplines: "參考檔案 {{value}} 的頭幾行:"
+  label_toplines: "參考檔案 {{original_filename}} 的頭幾行:"
   label_match_columns: "欄位匹配"
   label_match_select: "選擇匹配的欄位"
   label_import_rule: "匯入規則"
@@ -21,10 +21,10 @@ zh-TW:
   label_rule_name: "輸入規則名稱"
  
   label_import_result: "匯入結果"
-  label_result_notice: "處理了{{handle_count}}個項目。{{success_count}}個項目被成功匯入。"
+  label_result_notice: "處理了{{upload_count}}個項目。{{success_count}}個項目被成功匯入。"
   label_result_projects: "受影響的專案:"
   label_result_issues: "{{count}}個項目"
-  label_result_failed: "{{count}}條失敗的項目:"
+  label_result_failed: "{{failed_count}}條失敗的項目:"
   
   option_ignore: "忽略"
   
