@@ -1,5 +1,5 @@
 en:
-  label_import: "Import"
+  label_import: "Import issues"
   label_issue_importer: "Issue Importer"
   label_upload_notice: "Select a CSV file to import. Import file must have a header row. Maximum size 4MB."
   label_upload_format: "File format settings"
